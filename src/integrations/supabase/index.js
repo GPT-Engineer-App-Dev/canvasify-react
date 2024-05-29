@@ -45,11 +45,7 @@ const supabaseKey = import.meta.env.VITE_SUPABASE_API_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 export const queryClient = new QueryClient();
 export function SupabaseProvider({ children }) {
-    return (
-        <QueryClientProvider client={queryClient}>
-            {children}
-        </QueryClientProvider>
-    );
+    return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>;
 }
 
 const fromSupabase = async (query) => {
