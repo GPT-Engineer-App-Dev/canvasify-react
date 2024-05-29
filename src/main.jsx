@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import { SupabaseProvider } from './integrations/supabase';
+import { SupabaseProvider, AuthProvider } from './integrations/supabase';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const colors = {
@@ -18,7 +18,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <SupabaseProvider>
-        <App />
+        <AuthProvider>
+          <App />
+        </AuthProvider>
       </SupabaseProvider>
     </ChakraProvider>
   </React.StrictMode>
