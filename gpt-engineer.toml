@@ -1,5 +1,17 @@
 [run]
 build = "npm run build"
 
+[integrations.supabase]
+slug = "supabase"
+input_prompt = ""
+title = ""
+description = ""
+resources = []
+context_prompt = ""
+
+[integrations.supabase.parameters]
+SUPABASE_PROJECT_URL = "https://bzpthdlgoawlcijlheel.supabase.co"
+SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ6cHRoZGxnb2F3bGNpamxoZWVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY4MjUxNTQsImV4cCI6MjAzMjQwMTE1NH0.5DZQCEN8S_-wjlckA9SmijVhjrNWwNSDk1gXVEMQKug"
+
 [gptengineer-app]
 project_id = "..."
