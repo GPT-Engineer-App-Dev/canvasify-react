@@ -1,4 +1,4 @@
-import { Container, VStack } from "@chakra-ui/react";
+import { Container, VStack, Heading } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
 
 const Index = () => {
@@ -20,6 +20,7 @@ const Index = () => {
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4}>
+        <Heading as="h1" size="2xl">secret content</Heading>
         <canvas ref={canvasRef} style={{ border: "1px solid #000" }} />
       </VStack>
     </Container>
